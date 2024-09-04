@@ -1,0 +1,118 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+main {
+    min-height: 80vh;
+    padding: 40px 0;
+    position: relative;
+}
+
+.hero {
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+/* Styling for the owner images */
+.owner-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* Positioning for left and right images */
+.left-image {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.right-image {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+/* Positioning for the bottom image */
+.bottom-image {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    header nav a {
+        margin: 10px 0;
+    }
+
+    /* Adjust images on smaller screens */
+    .left-image, .right-image {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        transform: none;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .bottom-image {
+        margin-top: 20px;
+        transform: none;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+}
