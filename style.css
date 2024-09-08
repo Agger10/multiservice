@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: rgb(54, 146, 231);
     color: white;
     padding: 15px 0;
     text-align: center;
@@ -79,7 +79,7 @@ main {
 
 /* Footer styling */
 footer {
-    background-color: #333;
+    background-color: rgb(54, 146, 231);
     color: white;
     text-align: center;
     padding: 10px 0;
